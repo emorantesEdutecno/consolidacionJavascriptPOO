@@ -1,4 +1,4 @@
-export calculadora {
+export default {
   sumar: (a,b) =>{return a+b;},
   restar: (a,b) =>{return a-b;},
   multiplicar: (a,b) =>{return a*b;},
