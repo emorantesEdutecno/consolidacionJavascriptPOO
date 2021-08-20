@@ -1,4 +1,4 @@
 import cargar from './cargar.js';
-let pruebas=(){
+let pruebas= ()=>{
   cargar.cargarElementos();
 }
