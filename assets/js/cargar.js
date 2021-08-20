@@ -18,6 +18,7 @@ export default{
 }
 
 let crearMascotasPersonas = ()=>{
+  console.log('Funciona click crearMascotasPersonas');
   function Mascota(nombre){
 
     //definimos la variable _nombre como privada por convencion
@@ -135,6 +136,7 @@ console.log(p1.getMascota().getNombre());
 
 
 let crearRedesSociales = () =>{
+    console.log('Funciona click creaRedesSociales');
   function RedesSociales(nombre, usuario){
     this.nombre = nombre;
     this.usuario = usuario;
