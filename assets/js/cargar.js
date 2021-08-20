@@ -1,6 +1,6 @@
 export default{
   cargarElementos : () =>{
-    console.log('Funciona Onload');
+    console.log('Funciona el modulo');
     let elBotonPersona = document.getElementById('botonPersona');
     elBotonPersona.addEventListener('click', crearMascotasPersonas);
 
