@@ -187,12 +187,3 @@ let crearProyectos = () =>{
   proyecto1.agregarPersonas(persona3);
   console.log(proyecto1);
 }//fin crear proyectos
-
-import calculadora from './calculadora.js';
-let probarModulo = ()=>{
-
-    console.log('Veamos el resultado de la suma');
-    console.log(calculadora.sumar(2,3));
-
-
-}
