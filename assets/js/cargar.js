@@ -4,7 +4,6 @@ export default{
     let elBotonPersona = document.getElementById('botonPersona');
     elBotonPersona.addEventListener('click', crearMascotasPersonas);
 
-/*
     let elBotonRedSocial = document.getElementById('botonRedSocial');
     elBotonRedSocial.addEventListener('click', crearRedesSociales);
 
@@ -13,7 +12,7 @@ export default{
 
     let elBotonModulo = document.getElementById('botonModulo');
     elBotonModulo.addEventListener('click', probarModulo);
-*/
+
   },
 
 }
@@ -133,3 +132,70 @@ m1.setNombre('Firulais');
 console.log(p1.getMascota().getNombre());
 
 }// fin crearMascotasPersonas
+
+
+let crearRedesSociales = () =>{
+  function RedesSociales(nombre, usuario){
+    this.nombre = nombre;
+    this.usuario = usuario;
+  }// fin funcion Constructora RedesSociales
+
+  function Persona(id, nombre, redes_sociales){
+    this.id = id;
+    this.nombre = nombre;
+    this.redes_sociales = redes_sociales || [];
+  }//Fin funcion constructora Persona
+
+  Persona.prototype.agregarRedSocial = function(redSocial){
+    this.redes_sociales.push(redSocial);
+  }//fin funcion agregarRedSocial
+
+  //crear los objetos de redes Sociales
+  let r1 = new RedesSociales('Twitter', '@juanduran85');
+  let r2 = new RedesSociales('GitHub', 'JuanDuran85');
+
+  //creamos el objeto Persona
+  let p1 = new Persona(808080,'Juan',[r1,r2]);
+  console.log(p1);
+
+  let r3 = new RedesSociales('Facebook', 'JuanCDuranR');
+  p1.agregarRedSocial(r3);
+  console.log(p1);
+}//fin metodo crearRedesSociales
+
+
+let crearProyectos = () =>{
+  function Personas(nombre){
+    this.nombre = nombre;
+  }// fin funcion Constructora Personas
+
+  function Proyectos(nombre, personas){
+    this.nombre = nombre;
+    this.personas = personas || [];
+  }//Fin funcion constructora Proyectos
+
+  Proyectos.prototype.agregarPersonas = function(personas){
+    this.personas.push(personas);
+  }//fin funcion agregarPersonas
+
+  //crear los objetos de personas
+  let persona1 = new Personas('Gustavo');
+  let persona2 = new Personas('Moises');
+
+  //creamos el objeto Persona
+  let proyecto1 = new Proyectos('Desarrollo Web',[persona1,persona2]);
+  console.log(proyecto1);
+
+  let persona3 = new Personas('Paula');
+  proyecto1.agregarPersonas(persona3);
+  console.log(proyecto1);
+}//fin crear proyectos
+
+import calculadora from './calculadora.js';
+let probarModulo = ()=>{
+
+    console.log('Veamos el resultado de la suma');
+    console.log(calculadora.sumar(2,3));
+
+
+}
