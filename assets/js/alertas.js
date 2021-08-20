@@ -1,5 +1,6 @@
 export default{
   mostrarAlerta : () =>{
-    alert('funciona el modulo');
+    console.log('funciona el modulo alertas.js');
+    return alert('funciona el modulo');
   }
 }
