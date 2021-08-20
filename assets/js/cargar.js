@@ -1,19 +1,19 @@
 export default{
   cargarElementos : () =>{
     console.log('Funciona el modulo cargar');
-    let elBotonPersona = document.getElementById('botonPersona');
+    var elBotonPersona = document.getElementById('botonPersona');
     elBotonPersona.addEventListener('click', crearMascotasPersonas);
 
-    let elBotonRedSocial = document.getElementById('botonRedSocial');
+    var elBotonRedSocial = document.getElementById('botonRedSocial');
     elBotonRedSocial.addEventListener('click', crearRedesSociales);
 
-    let elBotonProyectos = document.getElementById('botonProyectos');
+    var elBotonProyectos = document.getElementById('botonProyectos');
     elBotonProyectos.addEventListener('click', crearProyectos);
 
-    let elBotonModulo = document.getElementById('botonModulo');
+    var elBotonModulo = document.getElementById('botonModulo');
     elBotonModulo.addEventListener('click', probarModulo);
 
-  },
+  }
 
 }
 
