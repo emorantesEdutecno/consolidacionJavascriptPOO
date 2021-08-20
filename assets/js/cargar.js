@@ -2,7 +2,7 @@ export default{
   cargarElementos : () =>{
     console.log('Funciona el modulo cargar');
     let elBotonPersona = document.getElementById('botonPersona');
-    elBotonPersona.addEventListener('click', crearMascotasPersonas);
+    elBotonPersona.addEventListener('click', this.crearMascotasPersonas);
 
 /*
     let elBotonRedSocial = document.getElementById('botonRedSocial');
