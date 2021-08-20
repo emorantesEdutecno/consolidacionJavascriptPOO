@@ -1,4 +1,3 @@
-import calculadora from './calculadora.js';
 let cargarElementos = () =>{
   console.log('Funciona Onload');
   let elBotonPersona = document.getElementById('botonPersona');
@@ -189,6 +188,7 @@ let crearProyectos = () =>{
   console.log(proyecto1);
 }//fin crear proyectos
 
+import calculadora from './calculadora.js';
 let probarModulo = ()=>{
 
     console.log('Veamos el resultado de la suma');
