@@ -9,8 +9,6 @@ let cargarElementos = () =>{
   let elBotonProyectos = document.getElementById('botonProyectos');
   elBotonProyectos.addEventListener('click', crearProyectos);
 
-  let elBotonModulo = document.getElementById('botonModulo');
-  elBotonModulo.addEventListener('click', probarModulo);
 
 }
 
