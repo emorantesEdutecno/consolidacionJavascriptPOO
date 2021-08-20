@@ -1,4 +1,4 @@
-import cargar from './cargar.js';
-let pruebas= ()=>{
-  cargar.cargarElementos();
+import alertas from './alertas.js';
+let pruebas = ()=>{
+  alertas.mostrarAlerta();
 }
